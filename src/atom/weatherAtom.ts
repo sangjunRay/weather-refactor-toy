@@ -16,7 +16,7 @@ const MokeDbDataGangdong: WeatherAPI = {
         ultraFineDust: '좋음',
     },
     hourly: {
-        announceTime: `케이웨더 제공 ${today}`,
+        announceTime: `케이웨더 제공 ${today} 발표`,
         hours: [
             {
                 time: 15,
@@ -39,7 +39,3 @@ export const weatherState = atom<WeatherAPI[]>({
     default: [MokeDbDataGangdong],
 });
 
-export const areaState = atom({
-    key: 'areaState',
-    default: '강동구'
-})

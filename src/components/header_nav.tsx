@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {BoldFont} from "../common/font";
 import {useRecoilState} from 'recoil';
-import {areaState} from "../atom/weatherAtom";
+import {areaState} from "../atom/areaAtom";
 
 const BackBtn = styled.div`
   background: url("https://static.forceteller.com/images/event/community/left.svg");
@@ -27,7 +27,7 @@ export const HeaderComponent = () => {
     return (
         <>
             <BackBtn/>
-            <CenterMessage>오늘 <BoldFont>{area}</BoldFont> 날씨</CenterMessage>
+            <CenterMessage>오늘 <BoldFont>{area.gu}</BoldFont> 날씨</CenterMessage>
             <AreaBtn/>
         </>
     )

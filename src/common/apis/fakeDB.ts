@@ -26,3 +26,9 @@ export interface WeatherAPI {
     subTitle: string;
     title: string;
 }
+
+export interface Area {
+    city: string,
+    gu: string,
+    dong: string,
+}

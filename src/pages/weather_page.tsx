@@ -1,5 +1,5 @@
-import {WeatherContainer} from "../container/weather_container";
 import styled from "styled-components";
+import {Banner} from "../components/weather_banner";
 
 const ContainerStyle = styled.section`
   width: 500px;
@@ -8,6 +8,6 @@ const ContainerStyle = styled.section`
 export const WeatherPage = () => {
     return (
         <ContainerStyle>
-            <WeatherContainer/>
+            <Banner />
         </ContainerStyle>);
 }
