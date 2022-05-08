@@ -22,13 +22,30 @@ const CenterMessage = styled.div`
   font-size: 1rem;
 `
 
-export const HeaderComponent = () => {
+function HeaderComponent():JSX.Element | null {
     const [area] = useRecoilState(areaState);
-    return (
-        <>
+    if (area.dong) {
+        return <>
+            <BackBtn/>
+            <CenterMessage>오늘 <BoldFont>{area.dong}</BoldFont> 날씨</CenterMessage>
+            <AreaBtn/>
+        </>
+    }
+    if (area.gu) {
+        return <>
             <BackBtn/>
             <CenterMessage>오늘 <BoldFont>{area.gu}</BoldFont> 날씨</CenterMessage>
             <AreaBtn/>
         </>
-    )
+    }
+    if (area.city) {
+        return <>
+            <BackBtn/>
+            <CenterMessage>오늘 <BoldFont>{area.city}</BoldFont> 날씨</CenterMessage>
+            <AreaBtn/>
+        </>
+    }
+    return null
 }
+
+export default HeaderComponent;

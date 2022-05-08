@@ -1,4 +1,4 @@
-import {HeaderComponent} from "../../components/weather/header_nav";
+import HeaderComponent from "../../components/weather/header_nav";
 import styled from "styled-components";
 
 const Header = styled.header`
