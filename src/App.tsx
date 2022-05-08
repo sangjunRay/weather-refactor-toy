@@ -1,6 +1,8 @@
 import React from 'react';
 import {WeatherPage} from "./pages/weather_page";
 import styled, {createGlobalStyle} from "styled-components";
+import {WeatherHeader} from "./container/weather_header";
+import {RecoilRoot} from 'recoil';
 
 const GlobalStyle = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -60,17 +62,19 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const GlobalPadding = styled.body`
-  padding: 0 30% 0 30%;
+    display: flex;
+    justify-content: center;
 `
 
 function App() {
     return (
-        <>
+        <RecoilRoot>
+            <WeatherHeader />
             <GlobalStyle/>
             <GlobalPadding>
                 <WeatherPage/>
             </GlobalPadding>
-        </>
+        </RecoilRoot>
     );
 }
 
