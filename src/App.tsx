@@ -1,7 +1,7 @@
 import React from 'react';
 import {WeatherPage} from "./pages/weather_page";
 import styled, {createGlobalStyle} from "styled-components";
-import {WeatherHeader} from "./container/weather_header";
+import {WeatherHeader} from "./container/weather/weather_header";
 import {RecoilRoot} from 'recoil';
 
 const GlobalStyle = createGlobalStyle`

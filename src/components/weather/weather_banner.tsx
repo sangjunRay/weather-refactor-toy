@@ -1,7 +1,7 @@
 import {useRecoilState} from "recoil";
-import {weatherState} from "../atom/weatherAtom";
+import {weatherState} from "../../atom/weatherAtom";
 import styled from "styled-components";
-import {Title, SubTitle} from '../common/font';
+import {Title, SubTitle} from '../../common/font';
 
 const BannerContainer = styled.section`
   padding: 1.2rem;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {BoldFont} from "../common/font";
+import {BoldFont} from "../../common/font";
 import {useRecoilState} from 'recoil';
-import {areaState} from "../atom/areaAtom";
+import {areaState} from "../../atom/areaAtom";
 
 const BackBtn = styled.div`
   background: url("https://static.forceteller.com/images/event/community/left.svg");
