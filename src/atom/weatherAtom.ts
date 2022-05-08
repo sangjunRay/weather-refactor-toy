@@ -3,8 +3,8 @@ import {WeatherAPI} from "../common/apis/fakeDB";
 
 let today = new Date().toLocaleDateString();
 
-const MokeDbDataGangdong:WeatherAPI = {
-    areaName: '서울특별시 강동구',
+const MokeDbDataGangdong: WeatherAPI = {
+    areaName: '강동구',
     bgImage: 'https://static.forceteller.com/images/weather/bg/spring_day_foggy_cool.jpg',
     daily: {
         findDust: '보통',
@@ -38,3 +38,8 @@ export const weatherState = atom<WeatherAPI[]>({
     key: 'weatherState',
     default: [MokeDbDataGangdong],
 });
+
+export const areaState = atom({
+    key: 'areaState',
+    default: '강동구'
+})

@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import {BoldFont} from "../common/font";
+import {useRecoilState} from 'recoil';
+import {areaState} from "../atom/weatherAtom";
 
 const BackBtn = styled.div`
   background: url("https://static.forceteller.com/images/event/community/left.svg");
   width: 48px;
   height: 44px;
+  cursor: pointer;
 `
 
 const AreaBtn = styled.div`
@@ -12,6 +15,7 @@ const AreaBtn = styled.div`
   width: 22px;
   height: 22px;
   margin-right: 1rem;
+  cursor: pointer;
 `
 
 const CenterMessage = styled.div`
@@ -19,10 +23,11 @@ const CenterMessage = styled.div`
 `
 
 export const HeaderComponent = () => {
+    const [area] = useRecoilState(areaState);
     return (
         <>
             <BackBtn/>
-            <CenterMessage>오늘 <BoldFont>강남구</BoldFont> 날씨</CenterMessage>
+            <CenterMessage>오늘 <BoldFont>{area}</BoldFont> 날씨</CenterMessage>
             <AreaBtn/>
         </>
     )
