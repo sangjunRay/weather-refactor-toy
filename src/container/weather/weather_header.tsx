@@ -2,6 +2,7 @@ import HeaderComponent from "../../components/weather/header_nav";
 import styled from "styled-components";
 
 const Header = styled.header`
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;

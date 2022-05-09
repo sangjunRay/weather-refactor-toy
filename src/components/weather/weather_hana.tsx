@@ -18,7 +18,7 @@ export const WeatherHana = () => {
     return (
         <BannerContainer>
             <a href='https://www.naver.com'>
-            <HanaBanner />
+                <HanaBanner/>
             </a>
         </BannerContainer>
     )

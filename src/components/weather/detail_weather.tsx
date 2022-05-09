@@ -4,6 +4,7 @@ import {weatherState} from "../../atom/weatherAtom";
 import {ColorFont, Font, Title} from "../../common/font";
 
 const DetailContainer = styled.div`
+  box-sizing: border-box;
   height: 180px;
   display: flex;
   flex-direction: column;

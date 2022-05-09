@@ -5,6 +5,7 @@ import {weatherState} from "../../atom/weatherAtom";
 import {ChartComponent} from "./chart_component";
 
 const ChartContainer = styled.section`
+  box-sizing: border-box;
   display: flex;
   height: 180px;
   justify-content: center;
