@@ -28,7 +28,9 @@ export interface WeatherAPI {
 }
 
 export interface Area {
-    city: string,
-    gu: string | null,
-    dong: string | null,
+    city?: string | null | undefined,
+    gu?: string | null | undefined,
+    dong?: string | null | undefined,
 }
+
+export interface AreaArray extends Array<Area> {}

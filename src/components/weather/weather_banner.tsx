@@ -6,7 +6,7 @@ import {Title, SubTitle} from '../../common/font';
 const BannerContainer = styled.section`
   box-sizing: border-box;
   padding: 1.2rem;
-  height: 150px;
+  height: 200px;
 `
 
 export const Banner = () => {
