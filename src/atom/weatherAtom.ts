@@ -19,15 +19,45 @@ const MokeDbDataGangdong: WeatherAPI = {
         announceTime: `케이웨더 제공 ${today} 발표`,
         hours: [
             {
-                time: 15,
+                time: 9,
                 temp: "21",
                 icon: "https://static.forceteller.com/images/weather/icons/icon_day_foggy.png",
             },
             {
-                time: 18,
+                time: 12,
                 temp: "24",
                 icon: "https://static.forceteller.com/images/weather/icons/icon_day_foggy.png"
-            }]
+            },
+            {
+                time: 15,
+                temp: "25",
+                icon: "https://static.forceteller.com/images/weather/icons/icon_day_foggy.png",
+            },
+            {
+                time: 18,
+                temp: "22",
+                icon: "https://static.forceteller.com/images/weather/icons/icon_day_foggy.png",
+            },
+            {
+                time: 21,
+                temp: "19",
+                icon: "https://static.forceteller.com/images/weather/icons/icon_day_foggy.png",
+            },
+            {
+                time: 0,
+                temp: "18",
+                icon: "https://static.forceteller.com/images/weather/icons/icon_day_sunny.png",
+            },
+            {
+                time: 3,
+                temp: "16",
+                icon: "https://static.forceteller.com/images/weather/icons/icon_day_sunny.png",
+            },
+            {
+                time: 6,
+                temp: "18",
+                icon: "https://static.forceteller.com/images/weather/icons/icon_day_sunny.png",
+            },]
     },
     isDark: false,
     subTitle: "조심조심!",

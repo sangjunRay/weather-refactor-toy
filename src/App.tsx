@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const GlobalPadding = styled.body`
+const GlobalPadding = styled.div`
     display: flex;
     justify-content: center;
 `
